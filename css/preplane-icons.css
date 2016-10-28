@@ -1,0 +1,327 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "preplaneicon";
+  src:url("../fonts/preplaneicon.eot");
+  src:url("../fonts/preplaneicon.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/preplaneicon.woff") format("woff"),
+    url("../fonts/preplaneicon.ttf") format("truetype"),
+    url("../fonts/preplaneicon.svg#preplaneicon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: "preplaneicon" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="plicon-"]:before,
+[class*=" plicon-"]:before {
+  font-family: "preplaneicon" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Aside Navigation Icon CSS - Starts */
+.plicon-dashboard:before, .plicon-subject:before, .plicon-custom-test:before, .plicon-schedule-test:before, .plicon-clock:before, .plicon-creategrp:before, .plicon-refer-earn:before {
+  position: absolute;
+  left: 24px;
+  top: 25px;
+  font-size: 24px;
+}
+
+.icon {
+  font-size: 24px;
+}
+.plicon-lg{
+  vertical-align: -15%;
+}
+
+.plicon-biology:before {
+  content: "\62";
+}
+.plicon-calendar:before {
+  content: "\63";
+}
+.plicon-chemistry:before {
+  content: "\66";
+}
+.plicon-clock:before {
+  content: "\6b";
+}
+.plicon-close:before {
+  content: "\6d";
+}
+.plicon-custom-test:before {
+  content: "\6e";
+}
+.plicon-dashboard:before {
+  content: "\6f";
+}
+.plicon-date:before {
+  content: "\70";
+}
+.plicon-graph:before {
+  content: "\73";
+}
+.plicon-friend:before {
+  content: "\74";
+}
+.plicon-hourglass:before {
+  content: "\75";
+}
+.plicon-lock:before {
+  content: "\77";
+}
+.plicon-mail:before {
+  content: "\78";
+}
+.plicon-mathematics:before {
+  content: "\79";
+}
+.plicon-notification:before {
+  content: "\7a";
+}
+.plicon-physics:before {
+  content: "\42";
+}
+.plicon-preplane:before {
+  content: "\43";
+}
+.plicon-preplane-circle:before {
+  content: "\44";
+}
+.plicon-profile:before {
+  content: "\46";
+}
+.plicon-report:before {
+  content: "\49";
+}
+.plicon-review:before {
+  content: "\4c";
+}
+.plicon-revision:before {
+  content: "\4e";
+}
+.plicon-trophy:before {
+  content: "\52";
+}
+.plicon-user:before {
+  content: "\53";
+}
+.plicon-error:before {
+  content: "\72";
+}
+.plicon-schedule-test:before {
+  content: "\56";
+}
+.plicon-arrow-l:before {
+  content: "\6c";
+}
+.plicon-arrow-dw:before {
+  content: "\4a";
+}
+.plicon-arrow-r:before {
+  content: "\4b";
+}
+.plicon-arrow-up:before {
+  content: "\51";
+}
+.plicon-check:before {
+  content: "\58";
+}
+.plicon-video:before {
+  content: "\59";
+}
+.plicon-proficiency:before {
+  content: "\5a";
+}
+.plicon-minus:before {
+  content: "\31";
+}
+.plicon-log-out:before {
+  content: "\32";
+}
+.plicon-g-plus:before {
+  content: "\34";
+}
+.plicon-youtube:before {
+  content: "\37";
+}
+.plicon-question:before {
+  content: "\38";
+}
+.plicon-chevron-up:before {
+  content: "\39";
+}
+.plicon-chevron-r:before {
+  content: "\21";
+}
+.plicon-chevron-l:before {
+  content: "\22";
+}
+.plicon-chevron-dw:before {
+  content: "\23";
+}
+.plicon-pause:before {
+  content: "\24";
+}
+.plicon-plus:before {
+  content: "\25";
+}
+.plicon-time:before {
+  content: "\26";
+}
+.plicon-subject:before {
+  content: "\64";
+}
+.plicon-accuracy:before {
+  content: "\45";
+}
+.plicon-linkedin:before {
+  content: "\61";
+}
+.plicon-skype:before {
+  content: "\65";
+}
+.plicon-twitter:before {
+  content: "\67";
+}
+.plicon-minus-square:before {
+  content: "\68";
+}
+.plicon-plus-square:before {
+  content: "\69";
+}
+.plicon-pencil-square:before {
+  content: "\6a";
+}
+.plicon-thumbs-o-up:before {
+  content: "\71";
+}
+.plicon-facebook:before {
+  content: "\76";
+}
+.plicon-upgrade:before {
+  content: "\48";
+}
+.plicon-off:before {
+  content: "\47";
+}
+.plicon-mobile:before {
+  content: "\4d";
+}
+.plicon-calendar-check:before {
+  content: "\4f";
+}
+.plicon-lightbulb:before {
+  content: "\50";
+}
+.plicon-file:before {
+  content: "\54";
+}
+.plicon-phone-1:before {
+  content: "\55";
+}
+.plicon-line-graph:before {
+  content: "\57";
+}
+.plicon-tour:before {
+  content: "\30";
+}
+.plicon-rupee:before {
+  content: "\41";
+}
+.plicon-resume-test:before {
+  content: "\35";
+}
+.plicon-paper-plane:before {
+  content: "\33";
+}
+.plicon-spinner:before {
+  content: "\7e";
+}
+.plicon-link:before {
+  content: "\36";
+}
+.plicon-backspace-outline:before {
+  content: "\27";
+}
+.plicon-search:before {
+  content: "\28";
+}
+.plicon-creategrp:before {
+  content: "\29";
+}
+.plicon-ios-book-outline:before {
+  content: "\2a";
+}
+.plicon-android-more-vertical:before {
+  content: "\2b";
+}
+.plicon-android-done:before {
+  content: "\2c";
+}
+.plicon-ios-search-strong:before {
+  content: "\2d";
+}
+.plicon-freetrial:before {
+  content: "\2e";
+}
+.plicon-assessment:before {
+  content: "\2f";
+}
+.plicon-android-bulb:before {
+  content: "\3a";
+}
+.plicon-compose:before {
+  content: "\3b";
+}
+.plicon-measure-01:before {
+  content: "\3c";
+}
+.plicon-left-quote:before {
+  content: "\3d";
+}
+.plicon-right-quote:before {
+  content: "\3e";
+}
+.plicon-bullseye:before {
+  content: "\3f";
+}
+.plicon-bookmark:before {
+  content: "\40";
+}
+.plicon-proficiency2:before {
+  content: "\5b";
+}
+.plicon-question2:before {
+  content: "\5d";
+}
+.plicon-calendar-1:before {
+  content: "\5e";
+}
+.plicon-arrow-down:before {
+  content: "\5f";
+}
+.plicon-arrow-up-1:before {
+  content: "\7c";
+}
+.plicon-refer-earn:before {
+  content: "\60";
+}
