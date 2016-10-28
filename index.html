@@ -94,16 +94,16 @@
           </div>
 
           <div class="col-md-4 col-sm-5 col-xs-12 header-form-wrapper">
-            <form class="form-box" role="form" action="/crm/campaigns/lp-ward-test-series/" method="POST">
+            <form class="form-box" role="form" action="javascript: postContactToGoogle()" method="POST">
               <div class="form-header-bg">
                 <h3 class="form-maintitle-txt">FREE TRIAL FOR 15 DAYS
                   <!-- <span class="form-subtitle-txt">LIMITED PERIOD OFFER</span> -->
                 </h3>
               </div>
               <main class="form-field-wrapper">
-                <input type="text" class="form-customize" placeholder="Name" name="name" />
-                <input type="email" class="form-customize" placeholder="Email" name="email"  />
-                <input type="tel" class="form-customize" placeholder="Mobile" maxlength="10" name="mobile" />
+                <input type="text" class="form-customize" placeholder="Name" name="name" id="name" />
+                <input type="email" class="form-customize" placeholder="Email" name="email" id="email"  />
+                <input type="tel" class="form-customize" placeholder="Mobile" maxlength="10" name="mobile" id="mobile" />
                 <span class="terms-conditions-tag"><input class="" type="checkbox" /> I agree to Terms & Conditions.</span>
                 <button type="submit" class="form-btn">START MY TRIAL</button>
                 <span class="form-bottom-txt">No spam. No sharing. 100% Confidentiality</span>
@@ -379,6 +379,43 @@
         $('.mini-submenu').hide();
       })
     })
+  </script>
+  <script type="text/javascript">
+      function validateEmail(email) {
+          var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+          return re.test(email);
+      }
+      function postContactToGoogle(){
+          var name = $('#name').val();
+          var email = $('#email').val();
+          var mobile = $('#mobile').val();
+          if ((name !== "") && (email !== "") && ((mobile !== "") && (validateEmail(email)))) {
+              $.ajax({
+                  url: "https://docs.google.com/forms/d/1BxGuOUvxW-46g43YgRHBrIBU6qgpFYl7TNhA8I2ySIk/formResponse",
+                  data: {"entry.185368920" : name, "entry.1749799108" : email, "entry.1405105765": mobile},
+                  type: "POST",
+                  dataType: "xml",
+                  statusCode: {
+                      0: function (){
+
+                          $('#name').val("");
+                          $('#email').val("");
+                          $('#mobile').val("");
+                          //Success message
+                      },
+                      200: function (){
+                          $('#name').val("");
+                          $('#email').val("");
+                          $('#mobile').val("");
+                          //Success Message
+                      }
+                  }
+              });
+          }
+          else {
+              alert("Please enter all details.")
+          }
+      }
   </script>
 </body>
 </html>
