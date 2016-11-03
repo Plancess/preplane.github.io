@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <meta name="description" content="">
   <meta name="author" content="">
@@ -13,7 +13,7 @@
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/preplane-icons.css" rel="stylesheet">
-  
+
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="http://fonts.googleapis.com/css?family=Lato:100,200,300,400,700,lighter" rel="stylesheet">
   <!-- <link href="http://fonts.googleapis.com/css?family=Lato:400,700,lighter" rel="stylesheet"> -->
@@ -85,7 +85,7 @@
             </div>
           </div>
           <div class="col-md-4 col-sm-5 col-xs-12 header-form-wrapper">
-            <form class="form-box" role="form" action="javascript: postContactToGoogle()" method="POST">
+            <form class="form-box" role="form" method="POST">
               <div class="form-header-bg">
                 <h3 class="form-maintitle-txt">FREE TRIAL FOR 15 DAYS
                   <!-- <span class="form-subtitle-txt">LIMITED PERIOD OFFER</span> -->
@@ -99,34 +99,24 @@
                 <input type="email" class="form-customize" placeholder="Email" name="email" id="email"  />
                 <input type="tel" class="form-customize" placeholder="Mobile" maxlength="10" name="mobile" id="mobile" />
                 <span class="terms-conditions-tag"><input class="" type="checkbox" /> I agree to Terms & Conditions.</span>
-                <button type="button" class="form-btn btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">START MY TRIAL</button>
+                <button type="button" class="form-btn btn btn-info btn-lg" onclick="javascript: postContactToGoogle()">START MY TRIAL</button>
                 <span class="form-bottom-txt">No spam. No sharing. 100% Confidentiality</span>
                 <!-- ON CLICK MODAL CONTENT CODE STARTS HERE -->
-                <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal fade" id="successModal" role="dialog">
                   <div class="modal-dialog">
                     <!-- Modal content-->
                     <div class="modal-content">
                       <div class="modal-body">
-                        <!-- ERROR MSG COMES HERE CODE STARTS -->
-                        <div class="col-xs-12 modal-main-cont-wrapper" style="display: block;">
-                          <div class="col-xs-12 modal-title-txt">Looks like something went wrong</div>
-                          <div class="col-xs-12 modal-error-success-img-wrapper"><img src="images/modal-error-img.png" border="0" /></div>
-                          <div class="col-xs-12 modal-subtitle-txt"> Please provide your details again</div>
-                          <div class="col-xs-12 modal-ok-btn-wrapper">
-                            <button type="submit" class="ok-btn">OK</button>
-                          </div>
-                          <!-- ERROR MSG COMES HERE CODE ENDS -->
-                        </div>
                         <!-- SUCCESS MSG COMES HERE CODE STARTS -->
-                        <div class="col-xs-12 modal-main-cont-wrapper" style="display: none;">
+                        <div class="col-xs-12 modal-main-cont-wrapper" >
                           <div class="col-xs-12 modal-title-txt">Thank you for your interest. </div>
                           <div class="col-xs-12 modal-error-success-img-wrapper"><img src="images/modal-success-img.png" border="0" /></div>
                           <div class="col-xs-12 modal-subtitle-txt">One of our representatives will contact you shortly</div>
                           <div class="col-xs-12 modal-ok-btn-wrapper">
-                            <button type="submit" class="ok-btn">OK</button>
+                            <button type="button" class="ok-btn" onclick="$('#successModal').modal('hide')">OK</button>
                           </div>
                         </div>
-                        <!-- SUCCESS MSG COMES HERE CODE ENDS -->                        
+                        <!-- SUCCESS MSG COMES HERE CODE ENDS -->
                       </div>
                     </div>
                   </div>
@@ -242,7 +232,7 @@
               </div>
               <div class="col-md-8 col-sm-12 right-img-wrapper">
                 <div class="video-bg">
-                  <iframe id="youTubeVideoPlayer" frameborder="0" allowfullscreen="1" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/PxLaQh4d9d0?allowfullscreen=1&amp;autoplay=1&amp;controls=1&amp;showinfo=1&amp;modestbranding=1&amp;loop=1&amp;fs=1&amp;cc_load_policy=1&amp;iv_load_policy=3&amp;autohide=0&amp;listType=playlist&amp;list=PL_ZkCfbyV-yWyYIz_mL71RwsJIlqBs5RZ&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.plancess.com&amp;widgetid=1"></iframe>
+                  <iframe id="youTubeVideoPlayer" frameborder="0" allowfullscreen="1" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/PxLaQh4d9d0?allowfullscreen=1&amp;autoplay=0&amp;controls=1&amp;showinfo=1&amp;modestbranding=1&amp;loop=1&amp;fs=1&amp;cc_load_policy=1&amp;iv_load_policy=3&amp;autohide=0&amp;listType=playlist&amp;list=PL_ZkCfbyV-yWyYIz_mL71RwsJIlqBs5RZ&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.plancess.com&amp;widgetid=1"></iframe>
                 </div>
               </div>
             </div>
@@ -284,7 +274,7 @@
         <div class="col-xs-12 p-0">
           <div class="your-class">
             <div class="col-xs-12 mainslick-testimonial-wrapper">
-              <div class="col-sm-4 col-xs-12 img-slider-wrapper"> 
+              <div class="col-sm-4 col-xs-12 img-slider-wrapper">
                 <div class="image-bar">
                   <img ng-src="images/testimonial.jpg" alt="" src="images/testimonial.jpg">
                 </div>
@@ -295,7 +285,7 @@
               </div>
             </div>
             <div class="col-xs-12 mainslick-testimonial-wrapper">
-              <div class="col-sm-4 col-xs-12 img-slider-wrapper"> 
+              <div class="col-sm-4 col-xs-12 img-slider-wrapper">
                 <div class="image-bar">
                   <img ng-src="images/testimonial.jpg" alt="" src="images/testimonial2.jpg">
                 </div>
@@ -312,22 +302,24 @@
     <section class="col-xs-12 exam-type-wrapper section-padding"  id="contact">
       <div class="container">
         <h1 class="section-title">Improve your scores with detailed recommendations</h1>
+        <form role="form" method="POST">
         <div class="col-xs-12 text-center p-0">
           <div class="col-xs-12 recommendation-cont-container">
             <div class="col-sm-3 recommendations-wrapper">
-              <input class="col-xs-12 field-data" type="text" placeholder="Name" />
+              <input class="col-xs-12 field-data" type="text" placeholder="Name" id="name2" />
             </div>
             <div class="col-sm-3 recommendations-wrapper">
-              <input class="col-xs-12 field-data" type="text" placeholder="Phone" />
+              <input class="col-xs-12 field-data" type="text" placeholder="Phone" id="mobile2" />
             </div>
             <div class="col-sm-3 recommendations-wrapper">
-              <input class="col-xs-12 field-data" type="text" placeholder="Email" />
+              <input class="col-xs-12 field-data" type="text" placeholder="Email" id="email2" />
             </div>
             <div class="col-sm-3 recommendations-wrapper">
-              <button type="submit" class="form-btn">START NOW</button>
+              <button type="button" class="form-btn" onclick="postContactToGoogle2()">START NOW</button>
             </div>
           </div>
         </div>
+        </form>
         <div class="col-xs-12 limited-offer-txt">FREE TRIAL FOR 15 DAYS!!</div>
       </div><!-- /.container -->
     </section>
@@ -358,10 +350,10 @@
   </div>
   <!--Footer End -->
 <!-- Bootstrap core JavaScript
-  ================================================== --> 
-  <!-- Placed at the end of the document so the pages load faster --> 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
-  <script src="js/bootstrap.min.js"></script> 
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
   <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
   <script type="text/javascript" src="js/slick.min.js"></script>
@@ -383,13 +375,13 @@
     });
 
     $(function() {
-      $('#slide-submenu').on('click',function() {             
+      $('#slide-submenu').on('click',function() {
         $(this).closest('.list-group').fadeOut('slide',function(){
-          $('.mini-submenu').fadeIn();  
-        });        
+          $('.mini-submenu').fadeIn();
+        });
       });
 
-      $('.mini-submenu').on('click',function(){   
+      $('.mini-submenu').on('click',function(){
         $(this).next('.list-group').toggle('slide');
         $('.mini-submenu').hide();
       })
@@ -404,32 +396,52 @@
       var name = $('#name').val();
       var email = $('#email').val();
       var mobile = $('#mobile').val();
+      $('#successModal').modal('show');
       if ((name !== "") && (email !== "") && ((mobile !== "") && (validateEmail(email)))) {
-        $.ajax({
+        postdata(name, email, mobile);
+
+      }
+      else {
+        // $('#errorModal').modal('show');
+      }
+    }
+    function postContactToGoogle2(){
+      var name = $('#name2').val();
+      var email = $('#email2').val();
+      var mobile = $('#mobile2').val();
+      $('#successModal').modal('show');
+      console.log(name, email, mobile);
+      if ((name !== "") && (email !== "") && ((mobile !== "") && (validateEmail(email)))) {
+        postdata(name, email, mobile);
+      }
+      else {
+        // $('#errorModal').modal('show');
+      }
+    }
+    function postdata(name, email, mobile) {
+      $.ajax({
           url: "https://docs.google.com/forms/d/1BxGuOUvxW-46g43YgRHBrIBU6qgpFYl7TNhA8I2ySIk/formResponse",
           data: {"entry.185368920" : name, "entry.1749799108" : email, "entry.1405105765": mobile},
           type: "POST",
           dataType: "xml",
           statusCode: {
             0: function (){
-
               $('#name').val("");
               $('#email').val("");
               $('#mobile').val("");
-                          //Success message
-                        },
-                        200: function (){
-                          $('#name').val("");
-                          $('#email').val("");
-                          $('#mobile').val("");
-                          //Success Message
-                        }
-                      }
-                    });
-      }
-      else {
-        alert("Please enter all details.")
-      }
+              //Success message
+              $('#successModal').modal('show');
+
+            },
+            200: function (){
+              $('#name').val("");
+              $('#email').val("");
+              $('#mobile').val("");
+              //Success Message
+              $('#successModal').modal('show');
+            }
+          }
+        });
     }
   </script>
 </body>
