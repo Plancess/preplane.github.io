@@ -4,17 +4,16 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">  
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <meta name="description" content="">
   <meta name="author" content="">
   <!-- <link rel="icon" href="../../favicon.ico"> -->
   <title>Preplane Welcome Landing Page</title>
-
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/preplane-icons.css" rel="stylesheet">
-
+  
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="http://fonts.googleapis.com/css?family=Lato:100,200,300,400,700,lighter" rel="stylesheet">
   <!-- <link href="http://fonts.googleapis.com/css?family=Lato:400,700,lighter" rel="stylesheet"> -->
@@ -38,20 +37,16 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12 header-content-main-wrapper">
-            <div class="logo col-md-3 col-sm-3 col-xs-12">
+            <div class="col-md-3 col-sm-2 col-xs-12 logo">
               <a href="index.html"><img alt="PCBS Education" title="PCBS Education" class="img-responsive" src="images/pcb-logo.png" /></a>
             </div>
-            <div class="navigation-content-wrapper col-md-9 col-sm-9 col-xs-12">
-
-
-
+            <div class="col-md-9 col-sm-10 col-xs-12 navigation-content-wrapper">
               <div class="nav-mob-wrapper visible-xs">
                 <div class="mini-submenu">
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </div>
-
                 <div class="list-group">
                   <span href="#" class="list-group-item active">
                     Submenu
@@ -77,8 +72,6 @@
       </div>
     </div>
     <!-- MAIN NAVIGATION CODE ENDS HERE -->
-
-
     <div class="container">
       <div class="row">
         <div class="col-xs-12 header-banner-content-wrapper">
@@ -86,13 +79,11 @@
             <span>World Class Learning is now available in your city</span>
             <!-- <span>(Offer valid for first 100 registrations)</span> -->
           </div>
-
           <div class="col-md-8 col-sm-7 col-xs-12 banner-left-content">
             <div class="video-bg">
-              <iframe id="youTubeVideoPlayer" frameborder="0" allowfullscreen="1" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/pqIzItjMrhw?list=PLAfSrCnzKf3lLWskK_Uo1UD67cHWzOG1c&allowfullscreen=1&amp;autoplay=1&amp;controls=1&amp;showinfo=1&amp;modestbranding=1&amp;loop=1&amp;fs=1&amp;cc_load_policy=1&amp;iv_load_policy=3&amp;autohide=0&amp;listType=playlist&amp;list=PL_ZkCfbyV-yWyYIz_mL71RwsJIlqBs5RZ&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.plancess.com&amp;widgetid=1"></iframe>
+              <iframe id="youTubeVideoPlayer" frameborder="0" allowfullscreen="1" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/videoseries?list=PLAfSrCnzKf3lLWskK_Uo1UD67cHWzOG1c"></iframe>
             </div>
           </div>
-
           <div class="col-md-4 col-sm-5 col-xs-12 header-form-wrapper">
             <form class="form-box" role="form" action="javascript: postContactToGoogle()" method="POST">
               <div class="form-header-bg">
@@ -101,12 +92,46 @@
                 </h3>
               </div>
               <main class="form-field-wrapper">
+                <!-- <input type="text" class="form-customize" placeholder="Name" name="name" />
+                <input type="email" class="form-customize" placeholder="Email" name="email"  />
+                <input type="tel" class="form-customize" placeholder="Mobile" maxlength="10" name="mobile" /> -->
                 <input type="text" class="form-customize" placeholder="Name" name="name" id="name" />
                 <input type="email" class="form-customize" placeholder="Email" name="email" id="email"  />
                 <input type="tel" class="form-customize" placeholder="Mobile" maxlength="10" name="mobile" id="mobile" />
                 <span class="terms-conditions-tag"><input class="" type="checkbox" /> I agree to Terms & Conditions.</span>
-                <button type="submit" class="form-btn">START MY TRIAL</button>
+                <button type="button" class="form-btn btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">START MY TRIAL</button>
                 <span class="form-bottom-txt">No spam. No sharing. 100% Confidentiality</span>
+                <!-- ON CLICK MODAL CONTENT CODE STARTS HERE -->
+                <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <!-- ERROR MSG COMES HERE CODE STARTS -->
+                        <div class="col-xs-12 modal-main-cont-wrapper" style="display: block;">
+                          <div class="col-xs-12 modal-title-txt">Looks like something went wrong</div>
+                          <div class="col-xs-12 modal-error-success-img-wrapper"><img src="images/modal-error-img.png" border="0" /></div>
+                          <div class="col-xs-12 modal-subtitle-txt"> Please provide your details again</div>
+                          <div class="col-xs-12 modal-ok-btn-wrapper">
+                            <button type="submit" class="ok-btn">OK</button>
+                          </div>
+                          <!-- ERROR MSG COMES HERE CODE ENDS -->
+                        </div>
+                        <!-- SUCCESS MSG COMES HERE CODE STARTS -->
+                        <div class="col-xs-12 modal-main-cont-wrapper" style="display: none;">
+                          <div class="col-xs-12 modal-title-txt">Thank you for your interest. </div>
+                          <div class="col-xs-12 modal-error-success-img-wrapper"><img src="images/modal-success-img.png" border="0" /></div>
+                          <div class="col-xs-12 modal-subtitle-txt">One of our representatives will contact you shortly</div>
+                          <div class="col-xs-12 modal-ok-btn-wrapper">
+                            <button type="submit" class="ok-btn">OK</button>
+                          </div>
+                        </div>
+                        <!-- SUCCESS MSG COMES HERE CODE ENDS -->                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ON CLICK MODAL CONTENT CODE ENDS HERE -->
               </main>
             </form>
           </div>
@@ -184,6 +209,16 @@
               </div><!--/.media body-->
             </div>
 
+            <div class="benefit-section">
+              <div class="media-left calendar-media">
+                <img src="images/google-play-icon.png" border="0" />
+              </div><!-- media left-->
+              <div class="media-body">
+                <h3>Mobile Learning Options</h3>
+                <span>Learn a topic or take a test for practice while you're commuting or waiting for a friend with our mobile apps</span>
+              </div><!--/.media body-->
+            </div>
+
           </div>
         </div>
       </div><!-- /container -->
@@ -194,82 +229,54 @@
     <!-- TAKE TOUR PREPLANE-->
     <section class="col-xs-12 take-tour-wrapper section-padding">
       <div class="container padd-sec">
-        <h1 class="section-title">Take a tour of PrepLane</h1>
+        <h1 class="section-title">Take a tour of Plancess</h1>
         <div class="col-xs-12 p-0">
-          <div class="your-class">
-
-
-
-
-
+          <div class="your-class-tour">
             <!-- TOUR SLIDES CODE STARTS HERE -->
             <div class="col-xs-12 mainslick-take-tour-wrapper">
-              <div class="col-sm-8 col-xs-12 right-img-wrapper">
-                <img src="images/take-tour-overwrite-img.png" border="0" alt="" />
+
+              <div class="col-md-4 col-sm-12 left-content-wrapper">
+                <p class="take-tour-title">Video Lectures</p>
+                <p class="take-tour-subtitle">Learn from animated video lectures to help you visualise concepts and understand better.</p>
+                <a href="https://www.plancess.com/home/videolectures" class="btn signup-now-btn">VIEW MORE</a>
               </div>
-              <div class="col-sm-4 col-xs-12 left-content-wrapper">
-                <p class="take-tour-title">Personalised Dashboard</p>
-                <p class="take-tour-subtitle">Get a customised dashboard with recommendations based on your test performance and learning progress.</p>
-                <a class="btn signup-now-btn">Sign Up Now</a>
+              <div class="col-md-8 col-sm-12 right-img-wrapper">
+                <div class="video-bg">
+                  <iframe id="youTubeVideoPlayer" frameborder="0" allowfullscreen="1" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/PxLaQh4d9d0?allowfullscreen=1&amp;autoplay=1&amp;controls=1&amp;showinfo=1&amp;modestbranding=1&amp;loop=1&amp;fs=1&amp;cc_load_policy=1&amp;iv_load_policy=3&amp;autohide=0&amp;listType=playlist&amp;list=PL_ZkCfbyV-yWyYIz_mL71RwsJIlqBs5RZ&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.plancess.com&amp;widgetid=1"></iframe>
+                </div>
               </div>
             </div>
             <!-- TOUR SLIDES CODE ENDS HERE -->
-
-
             <!-- TOUR SLIDES CODE STARTS HERE -->
             <div class="col-xs-12 mainslick-take-tour-wrapper">
-              <div class="col-sm-8 col-xs-12 right-img-wrapper">
-                <img src="images/take-tour-test-img.png" border="0" alt="" />
+
+              <div class="col-md-4 col-sm-12 left-content-wrapper">
+                <p class="take-tour-title">Study Material</p>
+                <p class="take-tour-subtitle">Study from expert designed books covering ever topic from basics to advanced problems.</p>
+                <a href="https://www.plancess.com/home/studymaterials" class="btn signup-now-btn">VIEW MORE</a>
               </div>
-              <div class="col-sm-4 col-xs-12 left-content-wrapper">
-                <p class="take-tour-title">Smart Assessments</p>
-                <p class="take-tour-subtitle">Practice with unlimited tests with detailed solutions to help you understand the mistakes you are making.</p>
-                <a class="btn signup-now-btn">Sign Up Now</a>
+              <div class="col-md-8 col-sm-12 right-img-wrapper">
+                <img src="images/study-material.png" border="0" alt="" />
               </div>
             </div>
             <!-- TOUR SLIDES CODE ENDS HERE -->
-
-
             <!-- TOUR SLIDES CODE STARTS HERE -->
             <div class="col-xs-12 mainslick-take-tour-wrapper">
-              <div class="col-sm-8 col-xs-12 right-img-wrapper">
-                <img src="images/take-tour-report-img.png" border="0" alt="" />
+
+              <div class="col-md-4 col-sm-12 left-content-wrapper">
+                <p class="take-tour-title">Preplane</p>
+                <p class="take-tour-subtitle">Practice with smart topic-wise tests with recommendations to help you prepare smarter.</p>
+                <a href="https://www.plancess.com/products/iit-jee-online-test-series-pcm" class="btn signup-now-btn">VIEW MORE</a>
               </div>
-              <div class="col-sm-4 col-xs-12 left-content-wrapper">
-                <p class="take-tour-title">Insightful Reports</p>
-                <p class="take-tour-subtitle">Get insights on your performance with concept-wise and question-wise analysis to help you in your preparation.</p>
-                <a class="btn signup-now-btn">Sign Up Now</a>
+              <div class="col-md-8 col-sm-12 right-img-wrapper">
+                <img src="images/online-material.png" border="0" alt="" />
               </div>
             </div>
             <!-- TOUR SLIDES CODE ENDS HERE -->
-
-
-
-            <!-- TOUR SLIDES CODE STARTS HERE -->
-            <div class="col-xs-12 mainslick-take-tour-wrapper">
-              <div class="col-sm-8 col-xs-12 right-img-wrapper">
-                <img src="images/take-tour-content-img.png" border="0" alt="" />
-              </div>
-              <div class="col-sm-4 col-xs-12 left-content-wrapper">
-                <p class="take-tour-title">Rich Learning Content</p>
-                <p class="take-tour-subtitle">Learn with rich and engaging content with animations and illustrations to help you visualise better.</p>
-                <a class="btn signup-now-btn">Sign Up Now</a>
-              </div>
-            </div>
-            <!-- TOUR SLIDES CODE ENDS HERE -->
-
-
-
-
-
           </div>
         </div><!-- /.col-xs-12 -->
       </div><!-- container -->
     </section><!-- take tour preplane -->
-
-
-
-
     <!-- TESTIMONIAL-->
     <section id="testimonials" class="col-xs-12 testimonial-landing section-padding text-white">
       <div class="container padd-sec">
@@ -277,7 +284,7 @@
         <div class="col-xs-12 p-0">
           <div class="your-class">
             <div class="col-xs-12 mainslick-testimonial-wrapper">
-              <div class="col-sm-4 col-xs-12 img-slider-wrapper">
+              <div class="col-sm-4 col-xs-12 img-slider-wrapper"> 
                 <div class="image-bar">
                   <img ng-src="images/testimonial.jpg" alt="" src="images/testimonial.jpg">
                 </div>
@@ -288,7 +295,7 @@
               </div>
             </div>
             <div class="col-xs-12 mainslick-testimonial-wrapper">
-              <div class="col-sm-4 col-xs-12 img-slider-wrapper">
+              <div class="col-sm-4 col-xs-12 img-slider-wrapper"> 
                 <div class="image-bar">
                   <img ng-src="images/testimonial.jpg" alt="" src="images/testimonial2.jpg">
                 </div>
@@ -317,11 +324,11 @@
               <input class="col-xs-12 field-data" type="text" placeholder="Email" />
             </div>
             <div class="col-sm-3 recommendations-wrapper">
-              <button type="submit" class="form-btn">START NOW!</button>
+              <button type="submit" class="form-btn">START NOW</button>
             </div>
           </div>
         </div>
-        <div class="col-xs-12 limited-offer-txt">Hurry Up! Limited period offer!!</div>
+        <div class="col-xs-12 limited-offer-txt">FREE TRIAL FOR 15 DAYS!!</div>
       </div><!-- /.container -->
     </section>
     <!-- COUNTING -->
@@ -351,10 +358,10 @@
   </div>
   <!--Footer End -->
 <!-- Bootstrap core JavaScript
-  ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  ================================================== --> 
+  <!-- Placed at the end of the document so the pages load faster --> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+  <script src="js/bootstrap.min.js"></script> 
   <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
   <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
   <script type="text/javascript" src="js/slick.min.js"></script>
@@ -367,55 +374,63 @@
       });
     });
 
+    $(document).ready(function(){
+      $('.your-class-tour').slick({
+        autoplay: false,
+        autoplaySpeed: 3000,
+        dots: true
+      });
+    });
+
     $(function() {
-      $('#slide-submenu').on('click',function() {
+      $('#slide-submenu').on('click',function() {             
         $(this).closest('.list-group').fadeOut('slide',function(){
-          $('.mini-submenu').fadeIn();
-        });
+          $('.mini-submenu').fadeIn();  
+        });        
       });
 
-      $('.mini-submenu').on('click',function(){
+      $('.mini-submenu').on('click',function(){   
         $(this).next('.list-group').toggle('slide');
         $('.mini-submenu').hide();
       })
     })
   </script>
   <script type="text/javascript">
-      function validateEmail(email) {
-          var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-          return re.test(email);
-      }
-      function postContactToGoogle(){
-          var name = $('#name').val();
-          var email = $('#email').val();
-          var mobile = $('#mobile').val();
-          if ((name !== "") && (email !== "") && ((mobile !== "") && (validateEmail(email)))) {
-              $.ajax({
-                  url: "https://docs.google.com/forms/d/1BxGuOUvxW-46g43YgRHBrIBU6qgpFYl7TNhA8I2ySIk/formResponse",
-                  data: {"entry.185368920" : name, "entry.1749799108" : email, "entry.1405105765": mobile},
-                  type: "POST",
-                  dataType: "xml",
-                  statusCode: {
-                      0: function (){
+    function validateEmail(email) {
+      var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(email);
+    }
+    function postContactToGoogle(){
+      var name = $('#name').val();
+      var email = $('#email').val();
+      var mobile = $('#mobile').val();
+      if ((name !== "") && (email !== "") && ((mobile !== "") && (validateEmail(email)))) {
+        $.ajax({
+          url: "https://docs.google.com/forms/d/1BxGuOUvxW-46g43YgRHBrIBU6qgpFYl7TNhA8I2ySIk/formResponse",
+          data: {"entry.185368920" : name, "entry.1749799108" : email, "entry.1405105765": mobile},
+          type: "POST",
+          dataType: "xml",
+          statusCode: {
+            0: function (){
 
-                          $('#name').val("");
-                          $('#email').val("");
-                          $('#mobile').val("");
+              $('#name').val("");
+              $('#email').val("");
+              $('#mobile').val("");
                           //Success message
-                      },
-                      200: function (){
+                        },
+                        200: function (){
                           $('#name').val("");
                           $('#email').val("");
                           $('#mobile').val("");
                           //Success Message
+                        }
                       }
-                  }
-              });
-          }
-          else {
-              alert("Please enter all details.")
-          }
+                    });
       }
+      else {
+        alert("Please enter all details.")
+      }
+    }
   </script>
 </body>
 </html>

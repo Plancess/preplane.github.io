@@ -120,9 +120,13 @@ body{
 	border-top-right-radius: 10px;
 }
 .header-form-wrapper .form-box h3 {
-	padding: 20px;
+	padding: 30px 20px;
 	margin-top: -1px;
 	margin-bottom: 0px;
+	border: 1px solid #45d281;
+	border-bottom: none;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 }
 .form-field-wrapper {
 	background-color: #fff;
@@ -174,7 +178,7 @@ h3.form-maintitle-txt {
 .section-title {
 	color: #333;
 	font-size: 28px;
-	font-weight: 700;
+	font-weight: 300;
 	text-align: center;
 	padding: 0 0 20px;
 	margin: 0 auto 40px;
@@ -245,6 +249,15 @@ h3.form-maintitle-txt {
 	padding: 0;
 	float: left;
 	margin: 7px 10px 15px;
+}
+.benefit-section img {
+	height: auto;
+	width: auto;
+	text-align: center;
+	font-size: 45px;
+	padding: 0;
+	float: left;
+	margin: 19px 14px 15px;
 }
 .benefit-section .custom-media {
 	color: #fc8178;
@@ -367,7 +380,7 @@ h3.form-maintitle-txt {
 
 /* TAKE TOUR PREPLANE SECTION */
 .take-tour-wrapper.section-padding {
-	padding: 80px 0 0 0;
+	padding: 60px 0;
 }
 .take-tour-wrapper .mainslick-take-tour-wrapper {
 	padding: 0 70px;
@@ -390,9 +403,21 @@ h3.form-maintitle-txt {
 }
 
 .take-tour-wrapper .mainslick-take-tour-wrapper .right-img-wrapper img {
-	width: 100%;
-	height: 395px;
+	/*width: 100%;
+	height: 395px;*/
 	overflow-y: hidden;
+	float: right;
+}
+.right-img-wrapper .video-bg {
+	background: url(../images/video-play-bg-img.png) no-repeat 0 0;
+	max-width: 516px;
+	/*min-height: 358px;*/
+	padding: 40px;
+}
+
+.right-img-wrapper .video-bg iframe {
+	width: 100%;
+	height: 262px;
 }
 
 .take-tour-wrapper .left-content-wrapper {
@@ -624,8 +649,8 @@ h3.form-maintitle-txt {
 	padding-top: 3px;
 	overflow: hidden;
 	padding: 20px;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 }
 .form-box main i {
 	position: absolute;
@@ -672,7 +697,6 @@ h3.form-maintitle-txt {
 	margin: 0px auto;
 	width: 100%;
 	height: 50px;
-	padding-bottom: 3px;
 	text-align: center;
 	text-shadow: none;
 	position: relative;
@@ -737,6 +761,22 @@ h3.form-maintitle-txt {
 	background-color: #e9eeef;
 	display: inline-block;
 }
+.pricing-main-banner {	
+	margin: 0px auto;
+	padding: 0px;
+	display: inline-block;
+}
+.pricing-main-banner img {
+	max-width: 100%;
+	background-color: #eff3f4;
+	background-size: contain;
+	display: inherit;
+	margin: 0px auto;
+}
+.pricing-title-txt {
+	margin-top: 40px;
+	margin-bottom: 15px;
+}
 .header-inner-section {
 	margin: 0px auto;
 	height: auto;
@@ -793,6 +833,9 @@ h3.form-maintitle-txt {
 .card-description .purple-color {
 	color: #9c54b7;
 }
+.card-description .maroon-color {
+	color: #f85c5c;
+}
 .card-description .exam-type-txt .small {
 	font-size: 18px;
 	font-weight: normal;
@@ -838,7 +881,7 @@ h3.form-maintitle-txt {
 }
 
 table.data-wrapper th, table.data-wrapper td {
-	padding: 10px;
+	padding: 20px 10px;
 	border: 1px solid #c2c2c2;
 	text-align: center;
 	vertical-align: middle;
@@ -859,6 +902,7 @@ table.data-wrapper td.exam-price span.strike-price{
 	color: #ff3838;
 	margin-bottom: 5px;
 	display: inline-block;
+	text-decoration: line-through;
 }
 
 .know-more-btn {
@@ -867,13 +911,14 @@ table.data-wrapper td.exam-price span.strike-price{
 	display: inline-block;
 }
 
-.know-more-btn > a {
+.know-more-btn .getInTouchBtn {
+	width: 200px;
 	margin: 0px auto;
-	padding: 15px 30px;
+	padding: 11px 30px;
 	background-color: #45d281;
 	color: #fff;
 	font-weight: bold;
-	font-size: 16px;
+	font-size: 18px;
 	border-radius: 3px;
 	text-align: center;
 	display: inline-block;
@@ -881,11 +926,84 @@ table.data-wrapper td.exam-price span.strike-price{
 	border: 2px solid #45d281;
 }
 
-.know-more-btn > a:hover {
-    color: #5ee497;
-    border: 2px solid #5ee497;
-    background-color: #fff;
-    transition: all ease-in-out .7s;
+.know-more-btn .getInTouchBtn:hover {
+	color: #5ee497;
+	border: 2px solid #5ee497;
+	background-color: #fff;
+	transition: all ease-in-out .7s;
+}
+.modal-content { 
+	width: 100%;
+	max-width: 510px;
+	margin: 0px auto;
+}
+.pricingFormModalWrapper { 
+	width: 100%;
+	max-width: 360px;
+	margin: 0px auto;
+}
+.modal-body {
+	width: 100%;	
+	margin: 0px auto;
+	text-align: center;
+	display: inline-block;
+	padding: 45px 30px 35px;
+}
+.modal-main-cont-wrapper {
+	margin: 0px;
+	padding: 0px;
+	display: inline-block;
+}
+.modal-title-txt {
+	text-align: center;
+	margin: 0px auto 35px;
+	padding: 0;
+	font-size: 24px;
+	font-family: "Lato";
+	font-weight: bold;
+	color: #474a55;
+	display: inline-block;
+}
+.modal-error-success-img-wrapper {
+	width: 100%;
+	margin: 0px auto 35px;
+	padding: 0px;
+	text-align: center;
+}
+.modal-subtitle-txt {
+	text-align: center;
+	margin: 0px auto 50px;
+	padding: 0px;
+	font-size: 16px;
+	font-family: "Lato";
+	font-weight: normal;
+	color: #333;
+	display: inline-block;
+}
+.modal-ok-btn-wrapper {
+	margin: 0px auto;
+	padding: 0px;
+	display: inline-block;
+	text-align: center;
+}
+.modal-ok-btn-wrapper > .ok-btn {
+	width: 150px;
+	margin: 0px auto;
+	padding: 10px 30px;
+	font-size: 15px;
+	font-family: "Lato";
+	font-weight: bold;
+	color: #fff;
+	background-color: #30abe4;
+	border-radius: 3px;
+	border: 2px solid #30abe4;
+	outline: none;
+}
+.modal-ok-btn-wrapper > .ok-btn:hover {
+	color: #30abe4;
+	border: 2px solid #30abe4;
+	background-color: #fff;
+	transition: all ease-in-out .7s;
 }
 
 @media (max-width:1200px){
@@ -903,6 +1021,11 @@ table.data-wrapper td.exam-price span.strike-price{
 	.benefit-texts {
 		margin: 0px auto;
 	}
+	.pricing-page .card-description {
+		margin: 0px;
+		padding: 0px;
+		display: inline-block; 
+	}
 }
 @media (max-width:1024px){
 	.promotion-text h2 {
@@ -911,12 +1034,22 @@ table.data-wrapper td.exam-price span.strike-price{
 	.promotion-text .text2 span {
 		font-size: 25px;
 	}
+	.header-form-wrapper {
+		padding-right: 25px;
+	}
+	.banner-bottom-content span.small {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 	.promotion-text h1.text3 {
 		font-size: 45px;
 		padding-bottom: 6px;
 	}
 	.promotion-text h3 {
 		font-size: 22px;
+	}
+	.take-tour-wrapper .mainslick-take-tour-wrapper {
+		padding: 0px 61px;
 	}
 	.promotion-text h3.text4 {
 		font-size: 30px;
@@ -969,6 +1102,12 @@ table.data-wrapper td.exam-price span.strike-price{
 	}
 }
 @media (max-width: 768px) {
+	.container {
+		width: 100%;
+	}
+	.pricing-title-txt {
+		margin-top: 30px;
+	}
 	.form-box {
 		margin-top:10px;
 		margin-right: 40px;
@@ -989,16 +1128,23 @@ table.data-wrapper td.exam-price span.strike-price{
 		width: 100%;
 		height: 213px;
 	}
+	.take-tour-wrapper .mainslick-take-tour-wrapper .right-img-wrapper img {
+		float: none;
+		margin: 0px auto; 
+		background-size: cover;
+		max-width: 100%;
+	}
 	.header-section {
-		height: 650px;
+		height: 680px;
 	}
 	.banner-bottom-content span.small {
 		margin-top: 23px;
 	}
 	.banner-left-content .video-bg {
+		width: 95%;
 		max-width: 517px;
 		min-height: 358px;
-		padding: 13px 53px 0px 53px;
+		padding: 13px 51px 0px 50px;
 		margin: 0 auto;
 	}
 	.ph_number {
@@ -1066,6 +1212,21 @@ table.data-wrapper td.exam-price span.strike-price{
 	.counting p {
 		font-size: 15px;
 	}
+	.take-tour-wrapper .left-content-wrapper {
+		padding: 0px 0 35px 25px;
+	}
+	.right-img-wrapper .video-bg {
+		max-width: 100%; 
+		background-size: cover;
+		height: 412px;
+	}
+	.right-img-wrapper .video-bg iframe {
+		height: 295px;
+		padding-left: 5px;
+	}
+	.take-tour-wrapper .mainslick-take-tour-wrapper .right-img-wrapper {
+		padding-left: 0px;
+	}
 }
 @media (max-width: 480px) {
 	.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
@@ -1078,6 +1239,9 @@ table.data-wrapper td.exam-price span.strike-price{
 	}
 	.card--no-head .card-description {
 		display: inline-block;
+	}
+	.pricing-title-txt {
+		margin-top: 30px;
 	}
 	.pricing-page, .pricing-page .container {
 		padding: 0px;
@@ -1165,9 +1329,9 @@ table.data-wrapper td.exam-price span.strike-price{
 		margin-bottom: 20px;	
 	}
 	.banner-left-content .video-bg {
-		max-width: 517;
+		max-width: 517px;
 		min-height: 247px;
-		padding: 13px 48px 0px 47px;
+		padding: 13px 45px 0px 43px;
 		margin: 0 auto;
 	}
 	.banner-left-content .video-bg iframe {
@@ -1218,8 +1382,10 @@ table.data-wrapper td.exam-price span.strike-price{
 		visibility: hidden;
 	}
 	.take-tour-wrapper .mainslick-take-tour-wrapper .right-img-wrapper {
-		padding-left: 0;
-		float: left;
+		padding: 0px;
+		float: none;
+		text-align: center;
+		width: 100%;
 	}
 	.take-tour-wrapper .left-content-wrapper {
 		padding: 35px 0 0;
@@ -1276,16 +1442,29 @@ table.data-wrapper td.exam-price span.strike-price{
 		margin-bottom: 45px;
 		font-size: 18px;
 	}
+	.right-img-wrapper .video-bg {
+		background-size: contain;
+	}
 
+	.right-img-wrapper .video-bg iframe {
+		height: 198px;
+	}
+	.take-tour-wrapper .mainslick-take-tour-wrapper .right-img-wrapper>img {
+		width: 100%;
+	}
 }
 @media (max-width: 375px) { 
 	.banner-left-content .video-bg {
 		height: 216px;
 		min-height: 100%;
-		padding: 11px 42px 0px 42px;
+		padding: 11px 40px 0px 38px;
 	}
 	.banner-left-content .video-bg iframe {
 		height: 165px;
+	}
+	.right-img-wrapper .video-bg iframe {
+		height: 171px;	
+		margin-top: -14px;
 	}
 }
 @media (max-width: 360px) { 
@@ -1297,11 +1476,14 @@ table.data-wrapper td.exam-price span.strike-price{
 	.banner-left-content .video-bg {
 		height: 194px;
 		min-height: 100%;
-		padding: 11px 37px 0px 37px;
+		padding: 10px 35px 0px 35px;
 	}
 	.benefit-section i {
 		width: 40px;
 		margin: 7px 15px 15px 4px;
+	}
+	.benefit-section img {	
+		margin: 19px 15px 15px 4px;
 	}
 	.testimonial-landing .mainslick-testimonial-wrapper {
 		padding: 0px 15px;
@@ -1319,6 +1501,21 @@ table.data-wrapper td.exam-price span.strike-price{
 		padding-right: 15px;
 	}
 	.banner-left-content .video-bg {
-		padding: 10px 35px 0px 35px;
+		padding: 4px 33px 0px 33px;
 	}
+	.card-description .exam-type-pricing-box {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	table.data-wrapper th, table.data-wrapper td {
+		padding: 3px;
+	}
+	.right-img-wrapper .video-bg iframe {
+		height: 147px;	
+		margin-top: -18px;
+	}
+	.banner-left-content .video-bg iframe {
+		height: 142px;
+	}
+
 }
