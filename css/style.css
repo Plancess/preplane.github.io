@@ -165,15 +165,11 @@ h3.form-maintitle-txt {
 	display: block;
 	padding-top: 10px;
 }
-.main-section {
-	padding: 100px 0px 20px;
-}
 
 /* what we offer css*/
 .who-we-are {
 	background-color: #eff3f4;
 	padding: 80px 0;
-	display: inline-block;
 }
 .section-title {
 	color: #333;
@@ -288,7 +284,6 @@ h3.form-maintitle-txt {
 }
 .testimonial-landing {
 	background: #fff;
-	display: inline-block;
 }
 .testimonial-landing .text-white {
 	color: #fff;
@@ -409,7 +404,7 @@ h3.form-maintitle-txt {
 	float: right;
 }
 .right-img-wrapper .video-bg {
-	background: url(../images/video-play-bg-img.png) no-repeat 0 0;
+	background: url(../images/video-play-bg-img1.png) no-repeat 0 0;
 	max-width: 516px;
 	/*min-height: 358px;*/
 	padding: 40px;
@@ -473,7 +468,6 @@ h3.form-maintitle-txt {
 .counting {
 	background: #6342a7;
 	color: #e5e2ef;
-	display: inline-block;
 	font-family: "Lato"
 }
 .counting span {
@@ -522,11 +516,10 @@ h3.form-maintitle-txt {
 	width:200px;
 }
 .exam-type-wrapper .limited-offer-txt {
-	font-weight: bold;
-	font-size: 16px;
-	color: #333;
+	font-size: 15px;
+	color: #666;
 	text-align: center;
-	margin-top: 45px;
+	font-weight: 300;
 }
 .footer-section {
 	color: #fff;
@@ -537,7 +530,6 @@ h3.form-maintitle-txt {
 	color: #666;
 	font-weight: normal;
 	line-height: 24px;
-	display: inline-block;
 }
 .footer-section div:first-child {
 
@@ -759,12 +751,6 @@ h3.form-maintitle-txt {
 }
 .main-inner-section {
 	background-color: #e9eeef;
-	display: inline-block;
-}
-.pricing-main-banner {	
-	margin: 0px auto;
-	padding: 0px;
-	display: inline-block;
 }
 .pricing-main-banner img {
 	max-width: 100%;
