@@ -96,8 +96,14 @@
                 <input type="email" class="form-customize" placeholder="Email" name="email"  />
                 <input type="tel" class="form-customize" placeholder="Mobile" maxlength="10" name="mobile" /> -->
                 <input type="text" class="form-customize" placeholder="Name" name="name" id="name" />
+                <span id='error_name' style="display: none; color:"></span>
+
                 <input type="email" class="form-customize" placeholder="Email" name="email" id="email"  />
+                <span id='error_email'  style="display: none;">Invalid Email</span>
+
                 <input type="tel" class="form-customize" placeholder="Mobile" maxlength="10" name="mobile" id="mobile" />
+                <span id='error_mobile' style="display: none; ">Invalid Mobile</span>
+
                 <span class="terms-conditions-tag"><input class="" type="checkbox" /> I agree to Terms & Conditions.</span>
                 <button type="button" class="form-btn btn btn-info btn-lg" onclick="javascript: postContactToGoogle()">START MY TRIAL</button>
                 <span class="form-bottom-txt">No spam. No sharing. 100% Confidentiality</span>
@@ -307,12 +313,15 @@
           <div class="col-xs-12 recommendation-cont-container">
             <div class="col-sm-3 recommendations-wrapper">
               <input class="col-xs-12 field-data" type="text" placeholder="Name" id="name2" />
+
             </div>
             <div class="col-sm-3 recommendations-wrapper">
               <input class="col-xs-12 field-data" type="text" placeholder="Phone" id="mobile2" />
+              <span id='error_mobile2'  style="display: none;">Invalid Mobile</span>
             </div>
             <div class="col-sm-3 recommendations-wrapper">
               <input class="col-xs-12 field-data" type="text" placeholder="Email" id="email2" />
+              <span id='error_email2'  style="display: none;">Invalid Email</span>
             </div>
             <div class="col-sm-3 recommendations-wrapper">
               <button type="button" class="form-btn" onclick="postContactToGoogle2()">START NOW</button>
@@ -393,13 +402,27 @@
       return re.test(email);
     }
     function postContactToGoogle(){
+
       var name = $('#name').val();
       var email = $('#email').val();
       var mobile = $('#mobile').val();
-      $('#successModal').modal('show');
-      if ((name !== "") && (email !== "") && ((mobile !== "") && (validateEmail(email)))) {
-        postdata(name, email, mobile);
-
+      console.log(name + ' -'+email + '-'+ mobile);
+      // $('#successModal').modal('show');
+      var validate = true;
+      if (email == ""){
+        $('#error_email').show();
+        validate = false;
+      }
+      if (!validateEmail(email)){
+        $('#error_email').show();
+        validate = false;
+      }
+      if (mobile == ""){
+        $('#error_mobile').show();
+        validate = false;
+      }
+      if(validate){
+         postdata(name, email, mobile);
       }
       else {
         // $('#errorModal').modal('show');
@@ -409,11 +432,24 @@
       var name = $('#name2').val();
       var email = $('#email2').val();
       var mobile = $('#mobile2').val();
-      $('#successModal').modal('show');
-      console.log(name, email, mobile);
-      if ((name !== "") && (email !== "") && ((mobile !== "") && (validateEmail(email)))) {
-        postdata(name, email, mobile);
+      // $('#successModal').modal('show');
+      var validate = true;
+      if (email == ""){
+        $('#error_email2').show();
+        validate = false;
       }
+      if (!validateEmail(email)){
+        $('#error_email2').show();
+        validate = false;
+      }
+      if (mobile == ""){
+        $('#error_mobile2').show();
+        validate = false;
+      }
+      if(validate){
+         postdata(name, email, mobile);
+      }
+
       else {
         // $('#errorModal').modal('show');
       }
