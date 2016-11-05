@@ -132,6 +132,16 @@ body{
 	background-color: #fff;
 	color: #999;
 }
+
+.form-field-wrapper .err-msg {
+	display: none;
+	text-align: left;
+	position: relative;
+	top: -9px;
+	font-size: 13px;
+	color: #f00;
+	margin: 0;
+}
 .terms-conditions-tag {
 	margin: 15px 0px;
 	display: block;
@@ -404,9 +414,9 @@ h3.form-maintitle-txt {
 	float: right;
 }
 .right-img-wrapper .video-bg {
-	background: url(../images/video-play-bg-img1.png) no-repeat 0 0;
+	background: url(../images/video-play-bg-img.png) no-repeat 0 0;
 	max-width: 516px;
-	/*min-height: 358px;*/
+	min-height: 358px;
 	padding: 40px;
 }
 
@@ -518,7 +528,7 @@ h3.form-maintitle-txt {
 .exam-type-wrapper .limited-offer-txt {
 	font-size: 15px;
 	color: #666;
-	text-align: center;
+	text-align: left;
 	font-weight: 300;
 }
 .footer-section {

@@ -87,24 +87,20 @@
           <div class="col-md-4 col-sm-5 col-xs-12 header-form-wrapper">
             <form class="form-box" role="form" method="POST">
               <div class="form-header-bg">
-                <h3 class="form-maintitle-txt">Reserve your Free Trial
-                  <!-- <span class="form-subtitle-txt">LIMITED PERIOD OFFER</span> -->
-                </h3>
+                <h3 class="form-maintitle-txt">RESERVE YOUR FREE TRIAL</h3>
               </div>
               <main class="form-field-wrapper">
-                <!-- <input type="text" class="form-customize" placeholder="Name" name="name" />
-                <input type="email" class="form-customize" placeholder="Email" name="email"  />
-                <input type="tel" class="form-customize" placeholder="Mobile" maxlength="10" name="mobile" /> -->
                 <input type="text" class="form-customize" placeholder="Name" name="name" id="name" />
-                <span id='error_name' style="display: none; color:"></span>
+                <p id='error_name' class="err-msg"></p>
 
                 <input type="email" class="form-customize" placeholder="Email" name="email" id="email"  />
-                <span id='error_email'  style="display: none;">Invalid Email</span>
+                <p id='error_email' class="err-msg">Invalid Email</p>
 
                 <input type="tel" class="form-customize" placeholder="Mobile" maxlength="10" name="mobile" id="mobile" />
-                <span class="terms-conditions-tag"><input class="" type="checkbox" checked="checked" /> I would like a guided walkthrough</span>
+                <p id='error_mobile' class="err-msg">Invalid Mobile</p>
+
+                <div class="terms-conditions-tag"><input class="" type="checkbox" checked="checked" /> I would like a guided walkthrough</div>
                 <button type="button" class="form-btn btn btn-info btn-lg" onclick="javascript: postContactToGoogle()">Book My Trial</button>
-                <span id='error_mobile' style="display: none; ">Invalid Mobile</span>
 
                 <span class="form-bottom-txt">No spam. No sharing. 100% Confidentiality</span>
                 <!-- ON CLICK MODAL CONTENT CODE STARTS HERE -->
